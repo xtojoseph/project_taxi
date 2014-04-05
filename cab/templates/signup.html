@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Signup</title>
+</head>
+<body>
+<form name="sign_form" method="post" action="/signup/" id="f1">
+
+    {% csrf_token %}
+
+{{ msg }}
+<div class="header"></div>
+    Username:
+    <input type="text" name="username" />
+    <br>
+    Password:
+    <input type="password" name="password" />
+    <br>
+    Confirm Password:
+    <input type="password" name="confirm_password" />
+    <br>
+    Email id:
+    <input type="email" name="email" />
+    <br>
+    <input type="submit" value="submit" />
+    </div>
+</form>
+</body>
+</html>

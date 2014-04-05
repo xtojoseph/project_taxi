@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>Homepage</title>
+</head>
+<body>
+{{ msg }}
+<div id="lgn">
+    <form name="login_form" method="post" action="/login/" id="f1">
+
+        {% csrf_token %}
+
+        <table>
+            <tr>
+                <td class="f1_label">User Name :</td><td><input type="text" name="username" value="" />
+            </td>
+            </tr>
+            <tr>
+                <td class="f1_label">Password  :</td><td><input type="password" name="password" value=""  />
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="login" value="Log In"  style="font-size:18px; " />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="/signup/"/>SignUp
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
